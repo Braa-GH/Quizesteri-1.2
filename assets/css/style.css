@@ -1,0 +1,108 @@
+.icon{
+    font-size: 4rem;
+    /*position: absolute;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+.component{
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.component a::before{
+    content: attr(data-work);
+    content-visibility: visible;
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 10px));
+}
+
+.component a:hover:before{
+    transform: translateX(0);
+}
+
+.blue::before{
+    background-color:rgb(0, 123, 255,0.7);
+}
+
+.blue i{
+    color: rgb(0, 123, 255,0.7);
+    border:rgb(0, 123, 255,0.2) solid 2px ;
+}
+
+.orange::before{
+    background-color:rgba(255,165,0,0.8);
+}
+
+.orange i{
+    color: orange;
+    border:rgba(255,165,0,0.2) solid 2px ;
+}
+
+.purple::before{
+    background-color: rgba(128,0,128,0.7);
+}
+
+.purple i{
+    color: purple;
+    border: rgba(128,0,128,0.2) solid 2px;
+}
+
+
+.green::before{
+    background-color: rgba(0,128,0,0.7);
+}
+
+.green i{
+    color: green;
+    border: rgba(0,128,0,0.2) solid 2px;
+}
+
+#nav-ul li:last-child{
+    border: none;
+}
+
+.course-nav{
+    border-top: solid 1px white;
+}
+
+.course-nav li{
+    border: none;
+    border-right: solid 1px white;
+}
+
+.course-nav li button:hover{
+    opacity: 0.6;
+}
+
+#div form, #div>div{
+    display: none;
+}
+
+.post-reactions{
+ border-top: 1px solid #1e2c3c;
+}
+
+.post-reactions li:hover{
+   background-color: #eee;
+}
+
+.post-reactions li:last-child{
+    border: 0;
+}
+
+.post-reactions li:last-child:hover{
+    background-color: #fff;
+}
+
+
+
